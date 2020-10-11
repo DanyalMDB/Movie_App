@@ -28,5 +28,37 @@ export class BindingPracticeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  getColor(){
+    return 'yellow'
+  }
+
+
+
+  onSaveClick($event){
+    debugger;
+    if($event){
+      alert('button clicked ' + $event.target.textContent);
+    }
+    else {
+      alert('button clicked');
+    }
+
+    this.clickCounter++;
+  }
+
+
+  setText($event){
+    this.login1 = $event.target.value;
+  }
+
+  show(v){
+    alert(v);
+  }
+
+
+
+
+
+
 
 }

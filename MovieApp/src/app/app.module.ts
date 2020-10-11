@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
 import { PersonListComponent } from './person-list/person-list.component';
 import { BindingPracticeComponent } from './binding-practice/binding-practice.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BindingPracticeComponent } from './binding-practice/binding-practice.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
